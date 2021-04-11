@@ -17,5 +17,16 @@ public class MyStack {
 	{
 		myLinkedList.printMyNodes();
 	}
+
+   //USE CASE 2 - PEEK and POP
+   public INode peek()
+	{
+		return myLinkedList.head;
+	}
+
+	public INode popStack()
+	{
+		return myLinkedList.pop();
+	}
 }
 
