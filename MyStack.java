@@ -28,5 +28,11 @@ public class MyStack {
 	{
 		return myLinkedList.pop();
 	}
+
+   //USE CASE  3- Queue Creation
+   public void pushQueue(INode<Integer> myNode)
+   {
+      myLinkedList.append(myNode);
+   }
 }
 
