@@ -34,5 +34,18 @@ public class MyStack {
    {
       myLinkedList.append(myNode);
    }
+
+   public void printQueue()
+   {
+      myLinkedList.printMyNodes();
+   }
+
+   //USE CASE 3 - Queue -> PEEK and POP
+
+   public INode popQueue()
+   {
+      return myLinkedList.pop();
+   }
+
 }
 

@@ -35,7 +35,7 @@ public class MyStackTest {
 	   Assert.assertEquals(pop,myThirdNode);
 	}
 
-   //TEST CASE 3 
+   //TEST CASE 3
    @Test
 	public void queueCheck()
 	{
@@ -46,6 +46,26 @@ public class MyStackTest {
 	   myQueue.pushQueue(myFirstNode);
 	   myQueue.pushQueue(mySecondNode);
       myQueue.pushQueue(myThirdNode);
-	   myQueue.printStack();
+	   myQueue.printQueue();
 	}
+
+   //TEST CASE 4
+   @Test
+   public void queueCheck()
+   {
+      MyNode<Integer> myFirstNode = new MyNode<>(70);
+      MyNode<Integer> mySecondNode = new MyNode<>(30);
+      MyNode<Integer> myThirdNode = new MyNode<>(56);
+      MyStack myQueue = new MyStack();
+      myQueue.pushQueue(myFirstNode);
+      myQueue.pushQueue(mySecondNode);
+      myQueue.pushQueue(myThirdNode);
+      myQueue.printQueue();
+      INode topNode = myQueue.peek();
+	   INode pop = myQueue.popQueue();
+	   myQueue.printQueue();
+	   Assert.assertEquals(topNode,myFirstNode);
+	   Assert.assertEquals(pop,myFirstNode);
+   }
+
 }
